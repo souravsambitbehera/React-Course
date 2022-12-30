@@ -5,15 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- FIRST ADD REACT, REACT-DOM,BABEL COMPILER -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    
+    <!-- this is the old or before react 17 version -->
+    <!-- <script type="text/babel">
+        ReactDOM.render("welcome",document.querySelector("p"))
+    </script> -->
+
+    <!-- To add value in html element by using react18 or higher version -->
+    <script type="text/babel">
+        const root=ReactDOM.createRoot(document.querySelector("h1"));
+        root.render("Hello");
+    </script>
 </head>
 <body>
-    <script type="module">
+        <!-- HOW TO ADD REACT ON EXISTING ELEMENTS OR PAGE OR TAG -->
+
+     <!-- <script type="module">
         import userName, {userAge} from "/src/index.js";
         document.querySelector("p").innerHTML=userAge;
         document.querySelector("h1").innerHTML=userName();
 
 
-    </script>
+    </script> -->
     <p></p>
     <h1></h1>
 </body>
